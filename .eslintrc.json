@@ -1,0 +1,21 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["standard"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "no-console": 1,
+    "no-undef": 0,
+    "quotes": 0,
+    "semi": 0,
+    "import/no-extraneous-dependencies": "off",
+    "no-plusplus": "off",
+    "comma-dangle": "off",
+    "space-before-function-paren": "off"
+  }
+}

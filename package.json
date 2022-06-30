@@ -1,0 +1,42 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "**How To Run**",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "start:docker": "docker-compose up",
+    "stop:docker": "docker-compose down",
+    "lint:fix": "eslint --fix .",
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "format": "node index.js --format"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^15.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^4.3.8",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "country-code-emoji": "^2.3.0",
+    "node-telegram-bot-api": "^0.56.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.foxminded.com.ua/foxstudent100722/task17-bot2.git"
+  }
+}
